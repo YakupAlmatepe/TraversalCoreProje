@@ -35,5 +35,14 @@ namespace BusinessLayer.Concrete
         {
            _aboutDal.Update(t);
         }
+        public void TAdd(About t)
+        {
+            _aboutDal.Insert(t);
+        }
+
+        public About TGetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

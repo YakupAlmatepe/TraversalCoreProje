@@ -37,5 +37,17 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+        public void TAdd(Destination t)
+        {
+            _destinationDal.Insert(t);
+        }
+        public Destination TGetDestinationWithGuide(int id)
+        {
+            return _destinationDal.GetDestinationWithGuide(id);
+        }
+        public List<Destination> TGetLast4Destinations()
+        {
+            return _destinationDal.GetLast4Destinations();
+        }
     }
 }

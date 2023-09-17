@@ -38,5 +38,9 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+        public void TAdd(SubAbout t)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

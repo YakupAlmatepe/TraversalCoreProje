@@ -37,5 +37,14 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
+        public void TAdd(Testimonial t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Testimonial TGetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

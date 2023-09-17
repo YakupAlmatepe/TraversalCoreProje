@@ -1,0 +1,18 @@
+﻿using DataAccessLayer.Concrete;
+using Microsoft.AspNetCore.Mvc;
+
+namespace TraversalCoreProje.ViewComponents.Comment
+{
+    public class CommentList : ViewComponent
+    {
+
+        CommentManager commentManager = new CommentManager(new EfCommentDal());
+        Context context = new Context();
+        public IViewComponentResult Invoke(int id)
+        {
+            ViewBag.commentCount = context.Comments.Where(x => x.DestinationID == id).Count();
+            var values = commentManager.TGetListCommentWithDestinationAndUser(id);
+            return View(values);
+        }
+    }
+}
