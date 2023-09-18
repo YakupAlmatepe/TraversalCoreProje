@@ -33,6 +33,7 @@ namespace DataAccessLayer.Repository
 
         public List<T> GetListByFilter(Expression<Func<T, bool>> filter)
         {
+            //context nesnesi oluşturarak filtrelemek istediklerimizi görmek istedik
             using var c = new Context();
             return c.Set<T>().Where(filter).ToList();
         }

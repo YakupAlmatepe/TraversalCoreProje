@@ -30,6 +30,36 @@
 
   <ItemGroup>
     <Folder Include="NewFolder\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Comment\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Destination\" />
+    <Folder Include="Views\ErrorPage\" />
+    <Folder Include="Views\Excel\" />
+    <Folder Include="Views\Guide\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\MemberLayoutPartial\" />
+    <Folder Include="Views\PdfReport\" />
+    <Folder Include="Views\PasswordChange\" />
+    <Folder Include="Views\Shared\Components\_AdminDashboardHeader\" />
+    <Folder Include="Views\Shared\Components\_AdminGuideList\" />
+    <Folder Include="Views\Shared\Components\_Card1Statistic\" />
+    <Folder Include="Views\Shared\Components\_Cards2Statistics\" />
+    <Folder Include="Views\Shared\Components\_CommentList\" />
+    <Folder Include="Views\Shared\Components\_DashboardBanner\" />
+    <Folder Include="Views\Shared\Components\_DestinationStatistic\" />
+    <Folder Include="Views\Shared\Components\_DestinationStatic2\" />
+    <Folder Include="Views\Shared\Components\_GuideDetails\" />
+    <Folder Include="Views\Shared\Components\_GuideList\" />
+    <Folder Include="Views\Shared\Components\_LastDestinations\" />
+    <Folder Include="Views\Shared\Components\_MemberLayoutFooter\" />
+    <Folder Include="Views\Shared\Components\_MemberLayoutHead\" />
+    <Folder Include="Views\Shared\Components\_MemberLayoutHeaderContent\" />
+    <Folder Include="Views\Shared\Components\_MemberLayoutNavbar\" />
+    <Folder Include="Views\Shared\Components\_MemberStatic\" />
+    <Folder Include="Views\Shared\Components\_PlatformSetting\" />
+    <Folder Include="Views\Shared\Components\_ProfileInformation\" />
+    <Folder Include="Views\Shared\Components\_TotalRevenue\" />
   </ItemGroup>
 
 </Project>
