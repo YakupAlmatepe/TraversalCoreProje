@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DTOLayer.DTOs.AppUserDTOs;
+using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

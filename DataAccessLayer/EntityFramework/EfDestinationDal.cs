@@ -12,24 +12,24 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    //public class EfDestinationDal : GenericRepository<Destination>, IDestinationDal
-    //{
-    //    public Destination GetDestinationWithGuide(int id)
-    //    {
-    //        using (var c = new Context())
-    //        {
+    public class EfDestinationDal : GenericRepository<Destination>, IDestinationDal
+    {
+        public Destination GetDestinationWithGuide(int id)
+        {
+            using (var c = new Context())
+            {
+               // ((x.Guide))
+                return c.Destinations.Where(x => x.DestinationID == id).Include(x => x).FirstOrDefault();
+            }
+        }
 
-    //            return c.Destinations.Where(x => x.DestinationID == id).Include(x => x.Guide).FirstOrDefault();
-    //        }
-    //    }
-
-    //    public List<Destination> GetLast4Destinations()
-    //    {
-    //        using (var context = new Context())
-    //        {
-    //            var values = context.Destinations.Take(4).OrderByDescending(x => x.DestinationID).ToList();
-    //            return values;
-    //        }
-    //    }
-    //}
+        public List<Destination> GetLast4Destinations()
+        {
+            using (var context = new Context())
+            {
+                var values = context.Destinations.Take(4).OrderByDescending(x => x.DestinationID).ToList();
+                return values;
+            }
+        }
+    }
 }

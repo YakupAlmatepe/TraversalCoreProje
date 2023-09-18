@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTOLayer.DTOs.DestinationDTOs
 {
-    internal class DestinationAddDTOs
+    public class DestinationAddDTOs
     {
+        public string City { get; set; }
+        public string DayNight { get; set; }
+        public double Price { get; set; }
+        public int Capacity { get; set; }
     }
 }

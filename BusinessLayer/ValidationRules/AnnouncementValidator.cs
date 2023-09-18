@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using DTOLayer.DTOs.AnnouncementDTOs;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;

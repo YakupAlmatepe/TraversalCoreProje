@@ -9,7 +9,7 @@ namespace TraversalCoreProje.ViewComponents.AdminDashboard
         public IViewComponentResult Invoke()
         {
             ViewBag.v1 = c.Destinations.Count();
-            ViewBag.v2 = c.Users.Count();
+            //ViewBag.v2 = c.Users.Count();
             return View();
         }
     }

@@ -49,5 +49,10 @@ namespace BusinessLayer.Concrete
         {
             return _destinationDal.GetLast4Destinations();
         }
+
+        public Destination TGetByID(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
